@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/homepg-style(francis).css">
+    <script type = "text/javascript" src="js/store.js"></script>
+
+    <title>Spot for Wellness - Products: Diet & Nutrition</title>
+
+</head>
+<body>
+<main>
+    <div class="desktop-head">
+        <div class="icon-bar">
+            <a href="index.html">
+                Home</a>
+            <a href="about.html">
+                About</a>
+            <a class="active" href="products.html">
+                Products</a>
+            <a href="booking">
+                Booking</a>
+            <a href="contacts.html">
+                Contact</a>
+        </div>
+    </div>
+    <div class="mobile-head">
+        <div class="icon-bar">
+            <a href="index.html"><i class="fa fa-home"></i></a>
+            <a href="about.html"><i class="fa fa-child"></i></a>
+            <a class="active" href="products.html"><i class="fa fa-gift"></i></a>
+            <a href="booking"><i class="fa fa-calendar"></i></a>
+            <a href="contacts.html"><i class="fa fa-globe"></i></a>
+        </div>
+    </div>
+    <div class="main-top">
+        <div class="container-fluid" id="products">
+            <div class="row">
+                <div class="col-4">
+                    <h3 class="header">Banyan Tree Spa: Royal Banyan</h3>
+                </div>
+                <div class="col-4">
+                    <h3 class="header">Ikeda Spa: Just for Her</h3>
+                </div>
+                <div class="col-4">
+                    <h3 class="header">Ikeda Spa: Just for Him</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="resources/banyan.jpg" alt="pic of banyan tree" width="100%">
+                </div>
+                <div class="col-4">
+                    <img src="resources/spa-her.jpg" alt="pic of ikeda spa for her" width="100%">
+                </div>
+                <div class="col-4">
+                    <img src="resources/spa-him.jpg" alt="pic of ikeda spa for him" width="100%">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <p style="text-align: center;">
+                        <br>
+                        <a class="btn btn-primary" onclick="store(1,'rest package')">Book Now</a><br>
+                        <br>
+                        Ease your aches and enhance blood circulation with this
+                        150-minute signature treatment, which includes a Herbal
+                        Pouch Massage and therapeutic herbal bath.<br>
+                        <br>
+                        From $624<br>
+                        <br>
+                        Click <a href="https://www.marinabaysands.com/hotel/amenities/banyan-tree-spa.html#offersandpackages">here</a> for more details.<br>
+                        <br>
+                        Book an appointment with us to enjoy preferred rates.<br>
+                        <br>
+                    </p>
+                </div>
+                <div class="col-4">
+                    <p style="text-align: center;">
+                        <br>
+                        <a class="btn btn-primary" onclick="store(2,'rest package')">Book Now</a><br>
+                        <br>
+                        Reward the lady of your life with an array of de-stressing treatments that are curated our award-winning treatments for a beautiful and uplifting experience<br>
+                        <br>
+                        From $378<br>
+                        <br>
+                        Click <a href="https://www.ikedaspa.com/treatments/package/">here</a> for more details.<br>
+                        <br>
+                        Book an appointment with us to enjoy preferred rates.<br>
+                        <br>
+                    </p>
+                </div>
+                <div class="col-4">
+                    <p style="text-align: center;">
+                        <br>
+                        <a class="btn btn-primary" onclick="store(3,'rest package')">Book Now</a><br>
+                        <br>
+                        Specially tailored for the leading men in your life who work and play hard every day, this Just For Him spa package makes the perfect gift for your boyfriend or that special guy in your life. This man spa will pamper him top-to-toe with our signature Onsen bath and a series of rejuvenating treatments.<br>
+                        <br>
+                        From $288<br>
+                        <br>
+                        Click <a href="https://www.ikedaspa.com/treatments/package/">here</a> for more details.<br>
+                        <br>
+                        Book an appointment with us to enjoy preferred rates.<br>
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-main-top">
+        <div class="container-fluid" id="products">
+            <div class="carousel slide bg-inverse w-55 ms-auto me-auto" data-ride="carousel" data-interval="false">
+                <div id="myCarousel" class="carousel carousel-dark slide" data-ride="carousel">
+                    <!-- Carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for carousel items -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <br>
+                            <h6>Banyan Tree Spa: Royal Banyan</h6><br>
+                            <img src="resources/banyan.jpg" alt="pic of banyan tree" class="d-block w-100" alt="Slide 1">
+                            <br>
+                            <p>
+                                Ease your aches and enhance blood circulation with this
+                                150-minute signature treatment, which includes a Herbal
+                                Pouch Massage and therapeutic herbal bath.<br>
+                                <br>
+                                From $624<br>
+                                <br>
+                                Click <a href="https://www.marinabaysands.com/hotel/amenities/banyan-tree-spa.html#offersandpackages">here</a> for more details.<br>
+                                <br>
+                                Book an appointment with us to enjoy preferred rates.<br>
+                                <br>
+                                <!-- <a class="btn btn-primary" href="booking.html">Book Now</a> -->
+                                <a class="btn btn-primary" onclick="store(1,'rest package')">Book Now</a><br>
+                                <br>
+                            </p>
+                        </div>
+                        <div class="carousel-item">
+                            <br>
+                            <h6>Ikeda Spa: Just for Her</h6><br>
+                            <img src="resources/spa-her.jpg" alt="pic of ikeda spa for her" class="d-block w-100" alt="Slide 2">
+                            <br>
+                            <p>
+                                Reward the lady of your life with an array of de-stressing treatments that are curated our award-winning treatments for a beautiful and uplifting experience<br>
+                                <br>
+                                From $378<br>
+                                <br>
+                                Click <a href="https://www.ikedaspa.com/treatments/package/">here</a> for more details.<br>
+                                <br>
+                                Book an appointment with us to enjoy preferred rates.<br>
+                                <br>
+                                <!-- <a class="btn btn-primary" href="booking.html">Book Now</a> -->
+                                <a class="btn btn-primary" onclick="store(2,'rest package')">Book Now</a><br>
+                                <br>
+                            </p>
+                        </div>
+                        <div class="carousel-item">
+                            <br>
+                            <h6>Ikeda Spa: Just for Him</h6><br>
+                            <img src="resources/spa-him.jpg" alt="pic of ikeda spa for him" class="d-block w-100" alt="Slide 3">
+                            <br>
+                            <p>
+                                Specially tailored for the leading men in your life who work and play hard every day, this Just For Him spa package makes the perfect gift for your boyfriend or that special guy in your life. This man spa will pamper him top-to-toe with our signature Onsen bath and a series of rejuvenating treatments.<br>
+                                <br>
+                                From $288<br>
+                                <br>
+                                Click <a href="https://www.ikedaspa.com/treatments/package/">here</a> for more details.<br>
+                                <br>
+                                Book an appointment with us to enjoy preferred rates.<br>
+                                <br>
+                                <!-- <a class="btn btn-primary" href="booking.html">Book Now</a> -->
+                                <a class="btn btn-primary" onclick="store(3,'rest package')">Book Now</a><br>
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Carousel controls -->
+                    <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+
+
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="section5">
+        <div class="row">
+            <div class="col-6" id="payment">
+                <p>Certified & secure</p>
+                <i class="fa fa-cc-paypal" style="font-size: 36px"></i>
+                <i class="fa fa-cc-mastercard" style="font-size: 36px"></i>
+                <i class="fa fa-cc-visa" style="font-size: 36px"></i>
+            </div>
+            <div class="col-6" id="social">
+                <p>Follow us</p>
+                <i><a href="https://www.facebook.com/" class="fa fa-facebook-official"  style="font-size: 36px;"></a></i>
+                <i><a href="https://twitter.com/?lang=en" class="fa fa-twitter" id="icon" style="font-size: 36px;"></a></i>
+                <i><a href="https://www.instagram.com/" class="fa fa-instagram" id="icon2" style="font-size: 36px;"></a></i>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <br>
+        <p style="text-align: center">18 Cross Street #11-08 Cross Street Exchange, S(048423)<br>
+            9am - 5pm (Mon-Fri)<br>
+            Closed on weekends & public holidays<br>
+            <br>
+            &copy; 2021 SpotforWellness Pte Ltd. All rights reserved.
+        </p>
+
+    </footer>
+
+</main>
+</body>

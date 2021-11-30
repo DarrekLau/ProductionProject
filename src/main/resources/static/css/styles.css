@@ -1,0 +1,34 @@
+.container {
+    padding-top: 24px;
+    background-color: aliceblue
+}
+
+
+.header {
+    text-align: center;
+    font-style: italic;
+    padding-top: 12px;
+}
+
+.aboutphoto{
+    padding-top: 5%;
+   padding-right: 5%;
+   padding-bottom: 5%;
+   width: 450px;
+   height:auto;
+}
+
+.aboutpara {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.footer-top {
+    padding: 60px 0;
+    background: #333;
+    text-align: left;
+    color: #aaa;
+}
+
+

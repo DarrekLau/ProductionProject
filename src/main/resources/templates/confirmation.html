@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+            crossorigin="anonymous"></script>
+    <title>Booking Confirmation</title>
+</head>
+<body>
+<main>
+    <div>
+        <h3 class="text-center p-3">We have received your appointment request.</h3>
+        <p class="text-center">Our consultant will get in touch with you within 1 working days.</p>
+        <p class="text-center">Any changes of appointment, please call our service hotline.</p>
+        <p class="text-center">A copy of your appointment has been sent to your email. Thank you.</p>
+    </div>
+    <br><br>
+    <div class="container d-flex align-items-center justify-content-center">
+        <div>
+            <strong>Ref No: </strong>
+            <span th:text="${booking.id}"></span><br>
+            <strong>Name: </strong>
+            <span th:text="${booking.fullName}"></span><br>
+            <strong>Email: </strong>
+            <span th:text="${booking.email}"></span><br>
+            <strong>Health & Medical: </strong>
+            <span th:text="${booking.healthMedicalPackage}"></span><br>
+            <strong>Rest & Relaxation: </strong>
+            <span th:text="${booking.restRelaxationPackage}"></span><br>
+            <strong>Diet & Nutrition: </strong>
+            <span th:text="${booking.dietNutritionPackage}"></span><br>
+            <strong>Appointment Date: </strong>
+            <span th:text="${#dates.format(booking.date, 'dd-MM-yyyy')}"></span><br>
+            <strong>Appointment Time: </strong>
+            <span th:text="${booking.time}"></span>
+        </div>
+    </div>
+    <br><br>
+    <p class="text-center"><a href="https://spotforwellness.herokuapp.com/">Back to home page</a></p>
+</main>
+
+</body>
+<footer id="footer">
+    <br>
+    <p style="text-align: center">18 Cross Street #11-08 Cross Street Exchange, S(048423)<br>
+        9am - 5pm (Mon-Fri)<br>
+        Closed on weekends & public holidays<br>
+        <br>
+        &copy; 2021 SpotforWellness Pte Ltd. All rights reserved.
+    </p>
+
+</footer>
+</html>

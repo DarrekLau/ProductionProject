@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+
+    <title>Update Booking</title>
+</head>
+<body>
+<form th:action="@{/admin/saveupdate}" th:object="${booking}" method="POST" class="m-3">
+    <label>Full name *:</label><br>
+    <input type="text" th:field="*{fullName}" name="name" placeholder="FirstName LastName" required="required"><br>
+    <br>
+    <label>Email *:</label><br>
+    <input type="email" th:field="*{email}" name="email" placeholder="email address" required="required"><br>
+    <br>
+    <label>Contact no.:</label><br>
+    <input type="number" th:field="*{contactNo}" name="contact" placeholder="Contact"><br>
+    <br>
+    <label for="health package">Select Health & Medical Package:</label><br>
+    <select id="health package" th:field="*{healthMedicalPackage}" name="health package">
+        <option value="Raffles" selected>Raffle Medical: Health Deluxe Plus</option>
+        <option value="Fullerton">Fullerton Health: Live Life Fuller</option>
+        <option value="Healthway">Healthway Medical: Elite Package</option>
+    </select><br>
+    <br>
+    <label for="rest package">Select Rest & Relaxation Package:</label><br>
+    <select id="rest package" th:field="*{restRelaxationPackage}" name="rest package">
+        <option value="Banyan" selected>Banyan Tree: Royal Banyan</option>
+        <option value="Ikeda">Ikeda Spa: Just for Her</option>
+        <option value="Kenko">Ikeda Spa: Just for Him</option>
+    </select><br>
+    <br>
+    <label for="diet package">Select Diet & Nutrition Package:</label><br>
+    <select id="diet package" th:field="*{dietNutritionPackage}" name="diet package">
+        <option value="kkh" selected>KKH Services</option>
+        <option value="gleneagles">Gleneagles Hospital Services</option>
+        <option value="sgh">SGH Services</option>
+    </select>
+    <br>
+    <br>
+    <label>Appointment date *:</label><br>
+    <input type="text" id="datepicker" th:value="${#dates.format(booking.date, 'dd-MM-yyyy')}" th:field="*{date}" name="arrival date" placeholder="dd/mm/yyyy" required="required"><br>
+    <script>
+        $( function() {
+            $( "#datepicker" ).datepicker({ dateFormat: 'dd/mm/yy', beforeShowDay: $.datepicker.noWeekends, minDate: 0});
+        } );
+        </script>
+    <br>
+    <label>Appointment time *:</label><br>
+    <select id="time" th:field="*{time}" name="time" required="required">
+        <option value="0900">0900</option>
+        <option value="1000">1000</option>
+        <option value="1100">1100</option>
+        <option value="1300">1300</option>
+        <option value="1400">1400</option>
+        <option value="1500">1500</option>
+        <option value="1600">1600</option>
+    </select>
+    <br>
+    <br>
+    <p>Address: 18 Cross Street, Cross Street Exchange, Singapore 048423<br>
+        9am - 5pm (Mon-Fri)<br>
+        Closed on weekends & public holidays<br>
+    </p>
+    <input type="submit" value=" Update reservation " style="font-size:20px"><br>
+    <br>
+    <!--creating hidden <input> tag to track the employee id-->
+    <input type="hidden" th:field="*{id}" />
+
+</form>
+
+</body>
+</html>

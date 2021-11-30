@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.icon-bar {
+    background-color: rgb(165, 206, 245);
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+}
+.icon-bar a {
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    width: 20%;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 24px;
+}
+.icon-bar a:hover {
+    background-color: rgb(11, 133, 240);
+}
+.active {
+    background-color: rgb(11, 133, 240);
+}
+.p1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 16px;
+}
+#section1 {
+    background-color: aliceblue;
+    /* background-image: url("/resources/ashley.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    padding-top: 64px;
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+#products {
+    background-color: aliceblue;
+    padding-top: 80px;
+}
+#section2 {
+    background-color: rgb(227, 240, 252);
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+.header {
+    text-align: center;
+    padding-top: 16px;
+}
+.carousel-inner {
+    padding-bottom: 24px;
+}
+.carousel-item {
+    background-color: rgb(165, 206, 245);
+    text-align: center;
+}
+#section3 {
+    background-color: aliceblue;
+}
+.header2 {
+    text-align:center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.text {
+    text-align: center;
+    padding-top: 16px;
+}
+#section4 {
+    background-color: rgb(227, 240, 252);
+    padding-bottom: 16px;
+}
+.header3 {
+    text-align:center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+#button {
+    background-color: gray;
+    color: white;
+    align-content: center;
+}
+#section5 {
+    background-color: aliceblue;
+    padding-top: 64px;
+    padding-bottom: 24px;
+}
+#section6 {
+    background-color: rgb(165, 206, 245);
+    padding-top: 16px;
+    padding-bottom: 24px;
+}
+#payment {
+    padding-left: 16px;
+}
+#social {
+    text-align: end;
+
+}
+#footer {
+    background-color: rgb(165, 206, 245);
+    padding-bottom: 5px;
+}
+
+#icon{
+       text-decoration: none;
+}
+
+#icon2{
+    text-decoration: none;
+}
+
+#formcolor{
+    background-color: aliceblue;
+}
+@media only screen and (max-width: 750px) {
+    div.desktop-head {
+        display: none;
+    }
+    div.main-top{
+        display:none;
+    }
+    /* div.main-2{
+        display:none
+    }
+    div.main3{
+        display:none
+    }
+    div.main-4{
+        display:none
+    } */
+    /* nav.footer-end-1{
+        display:none
+    }
+    .footer-end{
+        display: flex;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        margin-top: 24px;
+    } */
+}
+@media only screen and (min-width: 750px) {
+    div.mobile-head {
+        display: none;
+    }
+    div.mobile-main-top {
+        display: none;
+    }
+    /* div.main2-mobile{
+        display: none
+    }
+    div.main2-mobile-1{
+        display: none
+    }
+    div.main3-mobile{
+        display: none
+    }
+    div.main4-mobile{
+        display: none
+    } */
+}
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
